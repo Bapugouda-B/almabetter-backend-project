@@ -55,7 +55,7 @@ app.get("/subscribers/:_id", async (request, response) => {
 // use() function is used to mount the specified middleware function at the path which is being specified.
 //Means, when client enters wrong endpoints then app.use() method will show errors as invalid route. 
 app.use((request,response)=>{
-  response.status(404).send({errorMessage:'404 Page Not Found, Due to Invalid Route Action'})
+  response.status(404).send({errorMessage:'Error status code: 404 - Page Not Found, Due to Invalid Route Action'})
 })
 
 module.exports = app;
